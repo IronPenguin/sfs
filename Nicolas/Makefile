@@ -5,7 +5,7 @@ OGLSDL = -lSDL -lGL -lGLU
 CIBLE = kobayashi
 
 all:
-	$(CC) $(DEP) -o $(CIBLE) $(CFLAGS) $(OGL)
+	$(CC) $(DEP) -o $(CIBLE) $(CFLAGS) $(OGLSDL)
 
 clean::
 	rm -f kobayashi
