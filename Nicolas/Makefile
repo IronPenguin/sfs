@@ -1,7 +1,7 @@
 CC = clang
 CFLAGS = -Wall -Wextra -std=c99 -O2
 DEP = main.c
-OGLSDL = -lSDL -lGL -lGLU
+OGLSDL = -lSDL -lSDL_ttf -lGL -lGLU
 CIBLE = kobayashi
 
 all:
