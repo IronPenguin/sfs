@@ -1,10 +1,11 @@
 CC = clang
 CFLAGS = -Wall -Wextra -std=c99 -O2
-DEP =
-OGL = -lX11 -lGL -lGLU
+DEP = main.c
+OGLSDL = -lSDL -lGL -lGLU
+CIBLE = kobayashi
 
 all:
-	$(CC) $(CFLAGS) $(OGL) $(DEP) main.c -o kobayashi 
+	$(CC) $(DEP) -o $(CIBLE) $(CFLAGS) $(OGL)
 
 clean::
 	rm -f kobayashi
