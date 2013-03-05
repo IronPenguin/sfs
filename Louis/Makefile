@@ -1,9 +1,8 @@
-CC= clang
-CFLAGS= -Wall -Wextra -std=c99 -O2
-DEP=
-PRG= -o Louis
-	      
+CC = clang
+CCFLAGS = -Wall -Wextra -std=c99 -O2
+DEP = penguin.c vect.c
+
 all:
-	$(CC) $(CFLAGS) $(DEP) main.c $(PGR)
+	$(CC) $(DEP) -o Kobapenguin $(CCFLAGS)
 clean::
-	rm -f *~ *.o Louis
+	rm -f *~ *.o
